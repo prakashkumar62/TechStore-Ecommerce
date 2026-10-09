@@ -1,18 +1,19 @@
 # Dependencies
 node_modules/
-*/node_modules/
+**/node_modules/
 
-# Environment variables
+# Environment variables and secrets
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
+!.env.*.example
 *.env
 
 # Build outputs
 dist/
 build/
-*/dist/
-*/build/
+**/dist/
+**/build/
 
 # Logs
 npm-debug.log*
